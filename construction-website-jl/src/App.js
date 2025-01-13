@@ -1,14 +1,26 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import FeaturedWork from './pages/FeaturedWork';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-blue-500 text-white p-4 text-center min-h-screen flex items-center justify-center">
-      <header className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-8 rounded-lg shadow-lg">
-        <h1 className="text-4xl font-bold mb-4">Hello, Tailwind!</h1>
-        <p className="text-lg">Welcome to your beautifully styled header.</p>
-      </header>
-    </div>
+    <Router>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/featured" element={<FeaturedWork/>} />
+          </Routes>
+        </div>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 
