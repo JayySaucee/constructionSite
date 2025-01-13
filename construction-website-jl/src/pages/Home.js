@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 import firstPic from '../photos/firstConstruction.jpg';
@@ -6,6 +6,10 @@ import secondPic from '../photos/secondConstruction.jpg';
 import thirdPic from '../photos/thirdConstruction.webp';
 
 function Home() {
+    useEffect(() => {
+        document.title = "JL Installations";
+    }, []);
+
   return (
     <div className="p-8">
       <h1 className="text-4xl font-bold mb-4 justify-center text-center" >JL Installations</h1>
