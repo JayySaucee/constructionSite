@@ -7,7 +7,7 @@ function Footer() {
                 <p className="text-center">&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
                 <nav className="mt-4">
                     <ul className="flex justify-center space-x-4">
-                        <li><a href="/contact" className="hover:underline">Contact Us</a></li>
+                        <li><a href="/contact" className="hover:font-semibold">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
