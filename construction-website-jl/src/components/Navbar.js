@@ -17,7 +17,7 @@ function Navbar() {
           <Link to="/about" className="text-gray-400 text-2xl hover:font-semibold hover:text-black">About Us</Link>
         </li>
         <li>
-          <Link to="/featured" className="text-gray-400 text-2xl hover:font-semibold hover:text-black">Featured Work</Link>
+          <Link to="/contact" className="text-gray-400 text-2xl hover:font-semibold hover:text-black">Contact Us</Link>
         </li>
       </ul>
     </nav>
