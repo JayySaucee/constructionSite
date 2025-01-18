@@ -7,7 +7,6 @@ import thirdPic from '../photos/thirdConstruction.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-
 function Home() {
     useEffect(() => {
         document.title = "JL Installations";
@@ -18,20 +17,21 @@ function Home() {
       <h1 className="text-4xl font-bold mb-4 justify-center text-center" >JL Installations</h1>
       <div className="max-w-3xl mx-auto">
         <p className="text-center"> Your comprehensive one-stop solution for all installation-related needs.</p>
+
+        {/* Carousel component from react-responsive-carousel meant to showcase some featured photos on the homepage */}
         <Carousel showThumbs={false} autoPlay infiniteLoop>
           <div>
-            <img src={firstPic} alt="Image 1" className="w-full h-92 object-cover" />
-            <p className="legend">Breh</p>
+            <img src={firstPic} alt="Construction with crane" className="w-full h-92 object-cover" />
           </div>
           <div>
-            <img src={secondPic} alt="Image 2" className="w-full h-92 object-cover" />
-            <p className="legend">Image 2</p>
+            <img src={secondPic} alt="Two construction workers" className="w-full h-92 object-cover" />
           </div>
           <div>
-            <img src={thirdPic} alt="Image 3" className="w-full h-92 object-cover" />
-            <p className="legend">Image 3</p>
+            <img src={thirdPic} alt="Construction Project" className="w-full h-92 object-cover" />
           </div>
         </Carousel>
+
+        {/* Contact Information and Business Hours posted in seperate divs*/}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="py-6 px-6">
             <h2 className="text-2xl font-bold mb-2">Contact Information</h2>

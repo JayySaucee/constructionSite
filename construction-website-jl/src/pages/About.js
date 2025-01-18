@@ -8,6 +8,8 @@ function About() {
 
   return (
     <div className="p-8 m-2 flex justify-center">
+      
+      {/* About Us page filled with placeholder information for the time being */}
       <div className="bg-gray-100 p-8 rounded-lg shadow-lg max-w-7xl w-full flex">
         <img src={portrait} alt="Portrait of Jonathan" className="w-96 h-auto object-cover rounded-xl mr-8" />
         <div>
