@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 import logo from '../photos/stockLogo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   return (

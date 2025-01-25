@@ -9,6 +9,7 @@ import backgroundPhoto from '../photos/backgroundImage.jpg';
 import logo from '../photos/stockLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import QuoteForm from '../components/quoteForm';
 
 function Home() {
   useEffect(() => {
@@ -25,6 +26,11 @@ function Home() {
           <h1 className="text-4xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>JL Installations</h1>
           <p className="text-lg" style={{ fontFamily: 'Montserrat, sans-serif' }}>Your comprehensive one-stop solution for all installation-related needs.</p>
         </div>
+      </div>
+
+      <div className="mx-auto">
+        {/* Contact for quote form */}
+        <QuoteForm />
       </div>
 
       <div className="max-w-3xl mx-auto mt-8">
