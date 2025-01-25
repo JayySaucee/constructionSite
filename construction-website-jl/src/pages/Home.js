@@ -1,37 +1,50 @@
 import React, { useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import firstPic from '../photos/firstConstruction.jpg';
-import secondPic from '../photos/secondConstruction.jpg';
-import thirdPic from '../photos/thirdConstruction.webp';
+import firstPic from '../photos/featuredFirst.jpg';
+import secondPic from '../photos/featuredSecond.jpg';
+import thirdPic from '../photos/featuredThird.jpg';
+import fourthPic from '../photos/featuredFourth.jpg';
+import backgroundPhoto from '../photos/backgroundImage.jpg';
+import logo from '../photos/stockLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
-    useEffect(() => {
-        document.title = "JL Installations";
-    }, []);
+  useEffect(() => {
+    document.title = "JL Installations";
+  }, []);
 
   return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold mb-4 justify-center text-center" >JL Installations</h1>
-      <div className="max-w-3xl mx-auto">
-        <p className="text-center"> Your comprehensive one-stop solution for all installation-related needs.</p>
+    <div>
+      {/* Backdrop with company information */}
+      <div className="relative bg-cover bg-center h-[600px]" style={{ backgroundImage: `url(${backgroundPhoto})` }}>
+        <div className="absolute inset-0 bg-black opacity-5"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white bg-black bg-opacity-50 p-4 rounded-lg">
+          <img src={logo} alt="Company logo" className="h-32 mb-4" />
+          <h1 className="text-4xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>JL Installations</h1>
+          <p className="text-lg" style={{ fontFamily: 'Montserrat, sans-serif' }}>Your comprehensive one-stop solution for all installation-related needs.</p>
+        </div>
+      </div>
 
+      <div className="max-w-3xl mx-auto mt-8">
         {/* Carousel component from react-responsive-carousel meant to showcase some featured photos on the homepage */}
         <Carousel showThumbs={false} autoPlay infiniteLoop>
           <div>
-            <img src={firstPic} alt="Construction with crane" className="w-full h-92 object-cover" />
+            <img src={firstPic} alt="Cover with RV trailer" className="w-full h-92 object-cover" />
           </div>
           <div>
-            <img src={secondPic} alt="Two construction workers" className="w-full h-92 object-cover" />
+            <img src={secondPic} alt="Three entry garage" className="w-full h-92 object-cover" />
           </div>
           <div>
-            <img src={thirdPic} alt="Construction Project" className="w-full h-92 object-cover" />
+            <img src={thirdPic} alt="Big green garage warehouse" className="w-full h-92 object-cover" />
+          </div>
+          <div>
+            <img src={fourthPic} alt="Framing of warehouse structure" className="w-full h-92 object-cover" />
           </div>
         </Carousel>
 
-        {/* Contact Information and Business Hours posted in seperate divs*/}
+        {/* Contact Information and Business Hours posted in separate divs */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="py-6 px-6">
             <h2 className="text-2xl font-bold mb-2">Contact Information</h2>
@@ -43,16 +56,16 @@ function Home() {
                 </a>
               </li>
               <li>
-              <a href="mailto:info@jlinstallations.com" className="flex items-center hover:semibold">
+                <a href="mailto:info@jlinstallations.com" className="flex items-center hover:semibold">
                   <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                   Email: info@jlinstallations.com
-              </a>
+                </a>
               </li>
               <li>
-              <a href="https://goo.gl/maps/123MainStAnytownUSA" target="_blank" rel="noopener noreferrer" className="flex items-center hover:semibold">
+                <a href="https://goo.gl/maps/123MainStAnytownUSA" target="_blank" rel="noopener noreferrer" className="flex items-center hover:semibold">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
                   Address: 123 Main St, Anytown, USA
-              </a>
+                </a>
               </li>
             </ul>
           </div>
