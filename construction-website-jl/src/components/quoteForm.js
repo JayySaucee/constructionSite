@@ -19,13 +19,16 @@ function QuoteForm() {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-lg">
-      <h1 className="text-center text-2xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>Request a Quote</h1>
+    <div className="max-w-3xl mx-auto p-6 bg-gray-100 rounded-lg">
+      <h1 className="text-center text-4xl py-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>REQUEST A QUOTE</h1>
 
+      {/* Set up form to make use of formsubmit.co */}
       <form action="https://formsubmit.co/jorgealejandre.piki@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New Quote Request!" />
         <input type="hidden" name="_captcha" value="true" />
         <input type="hidden" name="_template" value="table"/>
+
+        {/* Add in various input fields needed for the quote form */}
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Name
@@ -98,6 +101,8 @@ function QuoteForm() {
             onChange={handleChange}
           ></textarea>
         </div>
+
+        {/* Make use of radio buttons to select preferred contact method */}
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">Preferred Contact Method</label>
           <div className="flex items-center">
@@ -108,10 +113,7 @@ function QuoteForm() {
           </div>
         </div>
         <div className="flex items-center justify-between">
-          <button
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
+          <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
             Submit
           </button>
         </div>

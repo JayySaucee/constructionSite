@@ -4,7 +4,7 @@ import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg
 
 function Footer() {
     return (
-        <footer className=" text-gray-800 py-6 text-xl border-t-2 border-gray-300">
+        <footer className=" text-gray-800 py-8 text-xl border-t-2 border-gray-300">
             <div className="container mx-auto px-2 flex justify-between items-center">
                 <p className="text-center">&copy; {new Date().getFullYear()} JL Installations. All rights reserved.</p>
                 <nav className="mt-4">

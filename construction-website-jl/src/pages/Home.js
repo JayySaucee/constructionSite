@@ -28,14 +28,17 @@ function Home() {
         </div>
       </div>
 
-      <div className="mx-auto">
+      <div className="mx-auto bg-gray-100">
         {/* Contact for quote form */}
         <QuoteForm />
       </div>
 
-      <div className="max-w-3xl mx-auto mt-8">
+      <div className="max-w-4xl mx-auto mt-8 ">
+        <h1 className="text-4xl font-bold mb-4 text-center" style={{ fontFamily: 'Montserrat, sans-serif' }} >FEATURED WORK</h1>
         {/* Carousel component from react-responsive-carousel meant to showcase some featured photos on the homepage */}
-        <Carousel showThumbs={false} autoPlay infiniteLoop>
+        <Carousel showThumbs={false} showArrows={false} showStatus={false} interval={6500} autoPlay infiniteLoop autoFocus={true} transitionTime={1000}
+          className="rounded-lg overflow-hidden border-black border-2"
+          >
           <div>
             <img src={firstPic} alt="Cover with RV trailer" className="w-full h-92 object-cover" />
           </div>
@@ -50,15 +53,22 @@ function Home() {
           </div>
         </Carousel>
 
+        {/* Button to view more photos in the gallery */}
+        <div className="text-center mt-4">
+          <button className='bg-white hover:text-white hover:bg-black text-black font-bold border-black border-2 py-2 px-4 rounded' style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <a href="/gallery">VIEW MORE </a>
+          </button>
+        </div>
+
         {/* Contact Information and Business Hours posted in separate divs */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="py-6 px-6">
             <h2 className="text-2xl font-bold mb-2">Contact Information</h2>
             <ul className="space-y-2 text-lg">
               <li>
-                <a href="tel:1234567890" className="hover:semibold flex items-center">
+                <a href="tel:5035090654" className="hover:semibold flex items-center">
                   <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                  Phone: (123) 456-7890
+                  Phone: (503) 509-0654
                 </a>
               </li>
               <li>
@@ -68,9 +78,9 @@ function Home() {
                 </a>
               </li>
               <li>
-                <a href="https://goo.gl/maps/123MainStAnytownUSA" target="_blank" rel="noopener noreferrer" className="flex items-center hover:semibold">
+                <a href="https://goo.gl/maps/4659" target="_blank" rel="noopener noreferrer" className="flex items-center hover:semibold">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
-                  Address: 123 Main St, Anytown, USA
+                  Address: Lancaster Rd SE, Salem, OR 97317
                 </a>
               </li>
             </ul>
