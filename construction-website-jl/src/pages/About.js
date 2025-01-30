@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react';
-import portrait from '../photos/portrait.jpg';
+
+const portrait = '/photos/portrait.jpg';
 
 function About() {
   useEffect(() => {
     document.title = "JL Installations - About Us";
   }, []);
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <div className="p-8 m-2 flex justify-center">

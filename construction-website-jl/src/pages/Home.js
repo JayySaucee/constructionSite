@@ -1,21 +1,28 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import firstPic from '../photos/featuredFirst.jpg';
-import secondPic from '../photos/featuredSecond.jpg';
-import thirdPic from '../photos/featuredThird.jpg';
-import fourthPic from '../photos/featuredFourth.jpg';
-import backgroundPhoto from '../photos/backgroundImage.jpg';
-import logo from '../photos/stockLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import QuoteForm from '../components/quoteForm';
+
+// Update the paths to the images
+const firstPic = '/photos/featuredFirst.jpg';
+const secondPic = '/photos/featuredSecond.jpg';
+const thirdPic = '/photos/featuredThird.jpg';
+const fourthPic = '/photos/featuredFourth.jpg';
+const backgroundPhoto = '/photos/backgroundImage.jpg';
+const logo = '/photos/stockLogo.png';
 
 function Home() {
   useEffect(() => {
     document.title = "JL Installations";
   }, []);
 
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   return (
     <div>
       {/* Backdrop with company information */}
@@ -36,7 +43,7 @@ function Home() {
       <div className="max-w-4xl mx-auto mt-8 ">
         <h1 className="text-4xl font-bold mb-4 text-center" style={{ fontFamily: 'Montserrat, sans-serif' }} >FEATURED WORK</h1>
         {/* Carousel component from react-responsive-carousel meant to showcase some featured photos on the homepage */}
-        <Carousel showThumbs={false} showArrows={false} showStatus={false} interval={6500} autoPlay infiniteLoop autoFocus={true} transitionTime={1000}
+        <Carousel showThumbs={false} showArrows={false} showStatus={false} interval={4000} autoPlay infiniteLoop autoFocus={true} transitionTime={1000}
           className="rounded-lg overflow-hidden border-black border-2"
           >
           <div>
@@ -55,9 +62,11 @@ function Home() {
 
         {/* Button to view more photos in the gallery */}
         <div className="text-center mt-4">
-          <button className='bg-white hover:text-white hover:bg-black text-black font-bold border-black border-2 py-2 px-4 rounded' style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            <a href="/gallery">VIEW MORE </a>
-          </button>
+          <Link to="/gallery" className="no-underline">
+            <button className='bg-white hover:text-white hover:bg-black text-black font-bold border-black border-2 py-2 px-4 rounded' style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              VIEW MORE
+            </button>
+          </Link>
         </div>
 
         {/* Contact Information and Business Hours posted in separate divs */}
