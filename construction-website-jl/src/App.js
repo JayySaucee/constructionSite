@@ -4,8 +4,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Footer from './components/Footer';
-import Contact from './pages/Contact';
 import './App.css';
+import SitePreparation from './pages/SitePreparation';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/sitepreparation" element={<SitePreparation/>} />
             <Route path="/gallery" element={<Gallery/>} />
           </Routes>
         </div>

@@ -15,10 +15,10 @@ function Navbar() {
           <Link to="/" className="text-gray-400 text-2xl hover:font-semibold hover:text-black" style={{ fontFamily: 'Montserrat, sans-serif' }}>Home</Link>
         </li>
         <li>
-          <Link to="/about" className="text-gray-400 text-2xl hover:font-semibold hover:text-black" style={{ fontFamily: 'Montserrat, sans-serif' }}>About Us</Link>
+          <Link to="/about" className="text-gray-400 text-2xl hover:font-semibold hover:text-black" style={{ fontFamily: 'Montserrat, sans-serif' }}>About</Link>
         </li>
         <li>
-          <Link to="/contact" className="text-gray-400 text-2xl hover:font-semibold hover:text-black" style={{ fontFamily: 'Montserrat, sans-serif' }}>Contact Us</Link>
+          <Link to="/sitepreparation" className="text-gray-400 text-2xl hover:font-semibold hover:text-black" style={{ fontFamily: 'Montserrat, sans-serif' }}>Site Preparation</Link>
         </li>
       </ul>
     </nav>
