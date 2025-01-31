@@ -1,54 +1,57 @@
 import React, { useEffect } from 'react';
-
-const portrait = '/photos/portrait.jpg';
+import AOS from 'aos';
 
 function About() {
   useEffect(() => {
-    document.title = "JL Installations - About Us";
-  }, []);
-
-  useEffect(() => {
-      window.scrollTo(0, 0);
+      document.title = "JL Installations - About";
     }, []);
+  
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
+  
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+      
 
   return (
-    <div className="p-8 m-2 flex justify-center">
+    <div className="p-2 m-2 flex justify-center">
       
       {/* About Us page filled with placeholder information for the time being */}
-      <div className="bg-gray-100 p-8 rounded-lg shadow-lg max-w-7xl w-full flex">
-        <img src={portrait} alt="Portrait of Jonathan" className="w-96 h-auto object-cover rounded-xl mr-8" />
-        <div>
-          <h1 className="text-4xl font-bold mb-4 text-center">About Us</h1>
-          <p className="mb-4 text-center">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. 
-            Volutpat parturient blandit volutpat habitant hendrerit. 
-            Taciti netus class pulvinar dolor nisi. Morbi taciti lorem
-            sagittis augue diam taciti urna. Eu nascetur magna parturient 
-            ligula volutpat risus dolor. Eget netus mus metus suscipit vivamus; 
-            enim dictumst praesent. Lacinia pharetra vivamus orci vel, ligula 
-            per nisi. Eros elementum morbi, vehicula faucibus tempus integer.
-          </p>
-          <p className="mb-4 text-center">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. 
-            Volutpat parturient blandit volutpat habitant hendrerit. 
-            Taciti netus class pulvinar dolor nisi. Morbi taciti lorem
-            sagittis augue diam taciti urna. Eu nascetur magna parturient 
-            ligula volutpat risus dolor. Eget netus mus metus suscipit vivamus; 
-            enim dictumst praesent. Lacinia pharetra vivamus orci vel, ligula 
-            per nisi. Eros elementum morbi, vehicula faucibus tempus integer.
-          </p>
-          <p className="mb-4 text-center">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. 
-            Volutpat parturient blandit volutpat habitant hendrerit. 
-            Taciti netus class pulvinar dolor nisi. Morbi taciti lorem
-            sagittis augue diam taciti urna. Eu nascetur magna parturient 
-            ligula volutpat risus dolor. Eget netus mus metus suscipit vivamus; 
-            enim dictumst praesent. Lacinia pharetra vivamus orci vel, ligula 
-            per nisi. Eros elementum morbi, vehicula faucibus tempus integer.
+      <div className="max-w-4xl mx-auto mt-8 p-4">
+        <h1 className="text-4xl w-auto py-4 text-black font-bold mb-12 text-center" data-aos="fade-up" style={{ fontFamily: 'Montserrat, sans-serif' }}>ABOUT US</h1>
+        
+        <div className="mb-12 p-8 bg-gray-100 rounded-lg shadow-lg" data-aos="fade-up">
+          <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Our Mission</h2>
+          <p className="text-xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            At JL Installations, we are committed to providing top-quality installation services to our clients. Our mission is to deliver exceptional results that exceed expectations and ensure customer satisfaction.
           </p>
         </div>
+
+        <div className="mb-12 p-8 bg-gray-100 rounded-lg shadow-lg" data-aos="fade-up">
+          <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Our Team</h2>
+          <p className="text-xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            Our team consists of skilled professionals with years of experience in the installation industry. We are dedicated to delivering superior workmanship and exceptional service on every project.
+          </p>
+        </div>
+
+        <div className="mb-12 p-8 bg-gray-100 rounded-lg shadow-lg" data-aos="fade-up">
+          <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Our Values</h2>
+          <p className="text-xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            Integrity, quality, and customer satisfaction are the core values that drive our business. We take pride in our work and strive to build lasting relationships with our clients based on trust and reliability.
+          </p>
+        </div>
+
+        <div className="mb-12 p-8 bg-gray-100 rounded-lg shadow-lg" data-aos="fade-up">
+          <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Contact Us</h2>
+          <p className="text-xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            For more information about our services or to request a quote, please contact us at
+            <a href="tel:503-509-0654" className="ml-2 text-blue-500 hover: font-semibold hover:text-blue-700">(503) 509-0654</a>
+          </p>
       </div>
     </div>
+  </div>
   );
 }
 
