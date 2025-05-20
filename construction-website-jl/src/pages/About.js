@@ -16,7 +16,7 @@ function About() {
       
 
   return (
-    <div className="p-2 m-2 flex justify-center">
+    <div className="p-2 m-12 flex justify-center">
       
       {/* About Us page filled with placeholder information for the time being */}
       <div className="max-w-4xl mx-auto mt-8 p-4">

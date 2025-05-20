@@ -14,11 +14,11 @@ const secondPic = '/photos/featuredSecond.jpg';
 const thirdPic = '/photos/featuredThird.jpg';
 const fourthPic = '/photos/featuredFourth.jpg';
 const backgroundPhoto = '/photos/backgroundImage.jpg';
-const logo = '/photos/stockLogo.png';
+const logo = '/photos/white_colored_logo.png';
 
 function Home() {
   useEffect(() => {
-    document.title = "JL Installations";
+    document.title = "Willamette Valley Metal Buildings LLC";
   }, []);
 
   useEffect(() => {
@@ -32,14 +32,18 @@ function Home() {
   return (
     <div>
       {/* Backdrop with company information */}
-      <div className="relative bg-cover bg-center h-[600px]" style={{ backgroundImage: `url(${backgroundPhoto})` }} data-aos="fade-up">
-        <div className="absolute inset-0 bg-black opacity-5"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white bg-black bg-opacity-50 p-4 rounded-lg">
-          <img src={logo} alt="Company logo" className="h-32 mb-4" />
-          <h1 className="text-4xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>JL Installations</h1>
-          <p className="text-lg" style={{ fontFamily: 'Montserrat, sans-serif' }}>Your comprehensive one-stop solution for all installation-related needs.</p>
-        </div>
-      </div>
+      <div
+  className="relative bg-cover bg-center h-[650px] pt-24 md:pt-0"
+  style={{ backgroundImage: `url(${backgroundPhoto})` }}
+  data-aos="fade-up"
+>
+  <div className="absolute inset-0 bg-black opacity-5"></div>
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-white bg-black bg-opacity-50 p-4 rounded-lg">
+    <img src={logo} alt="Company logo" className="h-96" />
+    {/*<h1 className="text-4xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Willamette Valley Metal Buildings LLC</h1>*/}
+    <p className="text-2xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>Your comprehensive one-stop solution for all installation-related needs.</p>
+  </div>
+</div>
 
       <div className="mx-auto bg-gray-100" data-aos="fade-up">
         {/* Contact for quote form */}
@@ -83,23 +87,28 @@ function Home() {
               <li>
                 <a href="tel:5035090654" className="hover:semibold flex items-center">
                   <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                  Phone: (503) 509-0654
+                  Phone: (503)-509-0654
                 </a>
               </li>
               <li>
-                <a href="mailto:info@jlinstallations.com" className="flex items-center hover:semibold">
+                <a href="mailto:willamettevalleymetalbuildings@gmail.com" className="flex items-center hover:semibold">
                   <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                  Email: info@jlinstallations.com
+                  Email: willamettevalleymetalbuildings@gmail.com
                 </a>
               </li>
+              {/* Not using the location link for now. May change in the future so let's keep it commented out.
+
               <li>
                 <a href="https://goo.gl/maps/4659" target="_blank" rel="noopener noreferrer" className="flex items-center hover:semibold">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
                   Address: Lancaster Rd SE, Salem, OR 97317
                 </a>
               </li>
+              */}
             </ul>
           </div>
+          {/* Not using business hours for now. May change in the future so let's keep it commented out.
+          
           <div className="py-6 px-6">
             <h2 className="text-2xl font-bold mb-2">Business Hours</h2>
             <ul className="space-y-2 text-lg">
@@ -107,7 +116,7 @@ function Home() {
               <li>Saturday: 10:00 AM - 4:00 PM</li>
               <li>Sunday: Closed</li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

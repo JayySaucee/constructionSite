@@ -14,7 +14,7 @@ function SitePreparation() {
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto mt-8 p-4">
+    <div className="max-w-4xl mx-auto mt-24 p-4">
       <h1 className="text-4xl w-auto text-black font-bold mb-12 text-center" data-aos="fade-up" style={{ fontFamily: 'Montserrat, sans-serif' }}>GUIDELINES ON SITE PREPARATIONS</h1>
       
       <div className="mb-12 p-8 bg-gray-100 rounded-lg shadow-lg" data-aos="fade-up">
