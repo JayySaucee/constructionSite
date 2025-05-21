@@ -41,7 +41,7 @@ const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-      document.title = "JL Installations - Previous Work";
+      document.title = "WVMB - Previous Work";
     }, []);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="gallery">
+    <div className="mt-24 p-8">
       <h1 className="text-4xl font-bold mb-4 text-center" style={{ fontFamily: 'Montserrat, sans-serif' }}>PREVIOUS WORK</h1>
       <div className="gallery-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 border-t border-black">
         {images.map((image, index) => (

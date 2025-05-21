@@ -3,7 +3,7 @@ import AOS from 'aos';
 
 function About() {
   useEffect(() => {
-      document.title = "JL Installations - About";
+      document.title = "WVMB - About";
     }, []);
   
     useEffect(() => {
@@ -25,7 +25,7 @@ function About() {
         <div className="mb-12 p-8 bg-gray-100 rounded-lg shadow-lg" data-aos="fade-up">
           <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Our Mission</h2>
           <p className="text-xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            At JL Installations, we are committed to providing top-quality installation services to our clients. Our mission is to deliver exceptional results that exceed expectations and ensure customer satisfaction.
+            At Willamette Valley Metal Buildings LLC, we are committed to providing top-quality installation services to our clients. Our mission is to deliver exceptional results that exceed expectations and ensure customer satisfaction.
           </p>
         </div>
 
@@ -47,7 +47,8 @@ function About() {
           <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Contact Us</h2>
           <p className="text-xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             For more information about our services or to request a quote, please contact us at
-            <a href="tel:503-509-0654" className="ml-2 text-blue-500 hover: font-semibold hover:text-blue-700">(503) 509-0654</a>
+            <a href="tel:(xxx)-xxx-xxx" className="ml-2 text-blue-500 hover: font-semibold hover:text-blue-700">(xxx)-xxx-xxx</a>.
+            You can also use our built in contact form, found on our homepage. We look forward to working with you!
           </p>
       </div>
     </div>

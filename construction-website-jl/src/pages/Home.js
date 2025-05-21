@@ -73,27 +73,28 @@ function Home() {
         {/* Button to view more photos in the gallery */}
         <div className="text-center mt-4" data-aos="fade-up">
           <Link to="/gallery" className="no-underline">
-            <button className='bg-white hover:text-white hover:bg-black text-black font-bold border-black border-2 py-2 px-4 rounded' style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <button className='bg-white hover:text-white text-xl hover:bg-black text-black font-bold border-black border-2 py-2 px-4 rounded' style={{ fontFamily: 'Montserrat, sans-serif' }}>
               VIEW MORE
             </button>
           </Link>
         </div>
 
         {/* Contact Information and Business Hours posted in separate divs */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up">
-          <div className="py-6 px-6">
-            <h2 className="text-2xl font-bold mb-2">Contact Information</h2>
-            <ul className="space-y-2 text-lg">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-[4.5fr,1fr] gap-8 max-w-7xl mx-auto" data-aos="fade-up">
+          <div className="py-4 px-2 md:px-8">
+            <h2 className="text-4xl font-bold mb-4 p-2">Contact Information</h2>
+            <ul className="space-y-2 text-lg py-2 m-2">
               <li>
-                <a href="tel:5035090654" className="hover:semibold flex items-center">
+                <a href="tel:5035090654" className="hover:semibold text-2xl py-2 m-2 hover:text-blue-600 flex items-center">
                   <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                  Phone: (503)-509-0654
+                  Phone: (xxx)-xxx-xxx
                 </a>
               </li>
               <li>
-                <a href="mailto:willamettevalleymetalbuildings@gmail.com" className="flex items-center hover:semibold">
+                <a href="mailto:willamettevalleymetalbuildings@gmail.com" className="flex items-center text-2xl py-2 m-2 hover:semibold hover:text-blue-600">
                   <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                  Email: willamettevalleymetalbuildings@gmail.com
+                  <span className="whitespace-nowrap mr-2">Email:</span>
+                  <span className="break-all">willamettevalleymetalbuildings@gmail.com</span>
                 </a>
               </li>
               {/* Not using the location link for now. May change in the future so let's keep it commented out.

@@ -106,9 +106,25 @@ function QuoteForm() {
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">Preferred Contact Method</label>
           <div className="flex items-center">
-            <input type="radio" id="contactEmail" name="Preferred Contact Method" value="Email" className="mr-2 hover:cursor-pointer" checked={formData.contactMethod === 'email'} onChange={handleChange} />
+            <input
+              type="radio"
+              id="contactEmail"
+              name="contactMethod"
+              value="email"
+              className="mr-2 hover:cursor-pointer"
+              checked={formData.contactMethod === 'email'}
+              onChange={handleChange}
+            />
             <label htmlFor="contactEmail" className="mr-4">Email</label>
-            <input type="radio" id="contactPhone" name="Preferred Contact Method" value="Phone" className="mr-2 hover:cursor-pointer" checked={formData.contactMethod === 'phone'} onChange={handleChange} />
+            <input
+              type="radio"
+              id="contactPhone"
+              name="contactMethod"
+              value="phone"
+              className="mr-2 hover:cursor-pointer"
+              checked={formData.contactMethod === 'phone'}
+              onChange={handleChange}
+            />
             <label htmlFor="contactPhone">Phone</label>
           </div>
         </div>

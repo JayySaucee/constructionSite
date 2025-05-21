@@ -72,6 +72,8 @@ function SitePreparation() {
         </p>
       </div>
 
+    {/* Displaying images of blueprints for the client to see, not being used for now.
+    
       <div className="mb-12 p-8 bg-gray-100 rounded-lg shadow-lg" data-aos="fade-up">
         <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Plans for Guidance</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -82,6 +84,7 @@ function SitePreparation() {
           ))}
         </div>
       </div>
+    */}
 
       <div className="mb-12 p-8 bg-gray-100 rounded-lg shadow-lg" data-aos="fade-up">
         <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Client Responsibilities</h2>
