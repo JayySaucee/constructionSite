@@ -84,29 +84,20 @@ function Home() {
           <div className="py-4 px-2 md:px-8">
             <h2 className="text-4xl font-bold mb-4 p-2">Contact Information</h2>
             <ul className="space-y-2 text-lg py-2 m-2">
-              <li>
-                <a href="tel:5035090654" className="hover:semibold text-2xl py-2 m-2 hover:text-blue-600 flex items-center">
-                  <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                  Phone: (xxx)-xxx-xxx
-                </a>
-              </li>
-              <li>
-                <a href="mailto:willamettevalleymetalbuildings@gmail.com" className="flex items-center text-2xl py-2 m-2 hover:semibold hover:text-blue-600">
-                  <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                  <span className="whitespace-nowrap mr-2">Email:</span>
-                  <span className="break-all">willamettevalleymetalbuildings@gmail.com</span>
-                </a>
-              </li>
-              {/* Not using the location link for now. May change in the future so let's keep it commented out.
-
-              <li>
-                <a href="https://goo.gl/maps/4659" target="_blank" rel="noopener noreferrer" className="flex items-center hover:semibold">
-                  <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
-                  Address: Lancaster Rd SE, Salem, OR 97317
-                </a>
-              </li>
-              */}
-            </ul>
+  <li>
+    <a href="tel:xxxxxxxxxx" className="hover:semibold text-lg md:text-2xl py-2 m-2 hover:text-blue-600 flex items-center">
+      <FontAwesomeIcon icon={faPhone} className="mr-2" />
+      Phone: (xxx)-xxx-xxx
+    </a>
+  </li>
+  <li>
+    <a href="mailto:willamettevalleymetalbuildings@gmail.com" className="flex items-center text-base md:text-2xl py-2 m-2 hover:semibold hover:text-blue-600">
+      <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+      <span className="whitespace-nowrap mr-2">Email:</span>
+      <span className="break-all">willamettevalleymetalbuildings@gmail.com</span>
+    </a>
+  </li>
+</ul>
           </div>
           {/* Not using business hours for now. May change in the future so let's keep it commented out.
           
