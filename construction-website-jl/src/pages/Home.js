@@ -84,12 +84,16 @@ function Home() {
           <div className="py-4 px-2 md:px-8">
             <h2 className="text-4xl font-bold mb-4 p-2">Contact Information</h2>
             <ul className="space-y-2 text-lg py-2 m-2">
-  <li>
+
+  {/* Maybe leave out personal phone numbers to avoid spammers 
+
+   <li>
     <a href="tel:xxxxxxxxxx" className="hover:semibold text-lg md:text-2xl py-2 m-2 hover:text-blue-600 flex items-center">
       <FontAwesomeIcon icon={faPhone} className="mr-2" />
       Phone: (xxx)-xxx-xxx
     </a>
-  </li>
+  </li> */}
+
   <li>
     <a href="mailto:willamettevalleymetalbuildings@gmail.com" className="flex items-center text-base md:text-2xl py-2 m-2 hover:semibold hover:text-blue-600">
       <FontAwesomeIcon icon={faEnvelope} className="mr-2" />

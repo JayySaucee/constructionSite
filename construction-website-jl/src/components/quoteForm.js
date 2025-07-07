@@ -23,7 +23,7 @@ function QuoteForm() {
       <h1 className="text-center text-4xl py-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>REQUEST A QUOTE</h1>
 
       {/* Set up form to make use of formsubmit.co */}
-      <form action="https://formsubmit.co/jorgealejandre.piki@gmail.com" method="POST">
+      <form action="https://formsubmit.co/willamettevalleymetalbuildings@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New Quote Request!" />
         <input type="hidden" name="_captcha" value="true" />
         <input type="hidden" name="_template" value="table"/>

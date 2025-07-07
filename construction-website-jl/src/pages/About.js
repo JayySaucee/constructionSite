@@ -46,13 +46,15 @@ function About() {
         <div className="mb-12 p-8 bg-gray-100 rounded-lg shadow-lg" data-aos="fade-up">
           <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Contact Us</h2>
           <p className="text-xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            For more information about our services or to request a quote, please contact us at
-            <a href="tel:(xxx)-xxx-xxx" className="ml-2 text-blue-500 hover: font-semibold hover:text-blue-700">(xxx)-xxx-xxx</a>.
-            You can also use our built in contact form, found on our homepage. We look forward to working with you!
+            For more information about our services or to request a quote, please contact us using the form on our homepage
+            or reach out to us via email at 
+              <a href="mailto:willamettevalleymetalbuildings@gmail.com" 
+                className="ml-2 text-blue-500 hover:font-semibold hover:text-blue-700">willamettevalleymetalbuildings@gmail.com
+              </a>.
           </p>
+        </div>
       </div>
     </div>
-  </div>
   );
 }
 
